@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>Home | Dani Izzat Naqiuddin</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#2C2B2F;
+    color:white;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+a:hover{color:saddlebrown;}
+
+/* NAV BAR (ALLOWED) */
+nav{
+    background:#1e1e1e;
+    padding:18px;
+    text-align:center;
+}
+nav a{
+    margin:0 18px;
+}
+
+/* HERO SECTION */
+main{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:80px 10%;
+    gap:80px;
+}
+
+/* LEFT CARD */
+article{
+    background:#3A3940;
+    padding:40px;
+    width:480px;
+    border-radius:12px;
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+
+article h1{
+    margin-top:0;
+    font-size:36px;
+}
+
+article p{
+    color:#D3D3D3;
+    line-height:1.7;
+    font-size:16px;
+}
+
+/* BUTTON */
+article a{
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 26px;
+    background:#A4A39C;
+    border-radius:6px;
+}
+article a:hover{background:saddlebrown;}
+
+/* PROFILE IMAGE */
+figure img{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #A4A39C;
+    animation:float 4s ease-in-out infinite, fadeIn 1.5s ease;
+}
+
+/* ANIMATION */
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-12px);}
+    100%{transform:translateY(0);}
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:scale(0.9);}
+    to{opacity:1; transform:scale(1);}
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    main{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+
+</style>
+</head>
+
+<body>
+
+
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="index.html.html" accesskey="1" title="Alt + 1">Home</a>
+    <a href="aboutme.new.html" accesskey="2" title="Alt + 2">About Me</a>
+    <a href="family.html" accesskey="3" title="Alt + 3">Family</a>
+    <a href="achievement.html" accesskey="4" title="Alt + 4">Achievement</a>
+    <a href="gallery.html" accesskey="5" title="Alt + 5">Gallery</a>
+    <a href="contact.html" accesskey="6" title="Alt + 6">Contact</a>
+</nav>
+
+
+<!-- MAIN CONTENT -->
+<main>
+
+    <!-- LEFT CONTENT -->
+    <article>
+        <h1>Welcome to My Website</h1>
+        <p>
+            Welcome to my website. Take your time to explore and get to know me better.
+            Here you will find my background, education journey, experiences, family,
+            gallery, and hobbies. I hope this website gives you a clear picture of who I am.
+        </p>
+        <a href="aboutme.new.html">Explore More</a>
+    </article>
+
+    <!-- RIGHT IMAGE -->
+    <figure>
+        <img src="images/images/gambar_mask.jpeg" alt="Dani Izzat">
+    </figure>
+
+</main>
+
+</body>
+</html>

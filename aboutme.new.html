@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Me | Dani Izzat</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+body{
+    margin:0;
+    background:#2C2B2F;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* NAV */
+nav{
+    background:#1e1e1e;
+    padding:20px;
+    text-align:center;
+}
+nav a{
+    color:white;
+    margin:0 20px;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover{color:saddlebrown;}
+
+/* TITLE */
+.page-title{
+    text-align:center;
+    font-size:48px;
+    margin:40px 0;
+}
+
+/* BIODATA */
+.main-container{
+    width:85%;
+    margin:auto;
+    display:flex;
+    gap:50px;
+    margin-bottom:60px;
+}
+
+.biodata{
+    width:55%;
+    background:#3A3940;
+    border-radius:15px;
+    padding:30px;
+}
+
+.biodata h2{
+    text-align:center;
+    color:#A4A39C;
+    margin-bottom:30px;
+}
+
+.biodata table{
+    width:100%;
+    font-size:20px;
+    line-height:2;
+}
+
+figure{
+    width:45%;
+    text-align:center;
+    align-self:center;
+}
+
+figure img{
+    width:100%;
+    max-width:380px;
+    border-radius:15px;
+    border:5px solid #A4A39C;
+}
+
+/* SECTION GENERAL */
+section{
+    width:85%;
+    margin:60px auto;
+    background:#3A3940;
+    padding:40px;
+    border-radius:15px;
+}
+
+section h2{
+    text-align:center;
+    color:#A4A39C;
+    margin-bottom:40px;
+}
+
+/* CARD */
+article{
+    background:#2C2B2F;
+    padding:30px;
+    border-radius:12px;
+    margin-bottom:40px;
+    border-left:5px solid #A4A39C;
+}
+
+article h3{
+    text-align:center;
+    font-size:30px;
+}
+
+article p{
+    text-align:center;
+    color:#D3D3D3;
+}
+
+/* MEDIA TABLE */
+table.media{
+    width:100%;
+    margin-top:30px;
+}
+
+table.media td{
+    text-align:center;
+    padding:15px;
+}
+
+.media-img{
+    width:100%;
+    max-width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    border:4px solid #A4A39C;
+}
+
+/* EDUCATION */
+.education article{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.education img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    border:4px solid #A4A39C;
+    background:white;
+}
+
+/* BUTTONS */
+.buttons{
+    text-align:center;
+    margin:40px 0;
+}
+
+.buttons a{
+    background:#A4A39C;
+    color:white;
+    padding:12px 28px;
+    border-radius:5px;
+    text-decoration:none;
+    margin:10px;
+}
+.buttons a:hover{background:saddlebrown;}
+
+@media(max-width:900px){
+    .main-container{flex-direction:column;}
+    figure,.biodata{width:100%;}
+    .education article{flex-direction:column;text-align:center;}
+}
+
+/* EDUCATION LINKS */
+.edu-links{
+    margin-top:10px;
+}
+
+.edu-links a{
+    display:inline-block;
+    margin:6px;
+    padding:8px 18px;
+    background:#A4A39C;
+    color:white;
+    border-radius:5px;
+    font-size:14px;
+    text-decoration:none;
+}
+
+/* MOVIES WITH TEXT */
+.movie-card{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.movie-card img{
+    width:250px;
+    height:350px;
+    object-fit:cover;
+    border-radius:10px;
+    border:4px solid #A4A39C;
+}
+
+.movie-text h3{
+    margin-top:0;
+    font-size:28px;
+    color:white;
+}
+
+.movie-text p{
+    color:#D3D3D3;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.movie-text span{
+    color:#A4A39C;
+    font-weight:bold;
+}
+
+@media(max-width:900px){
+    .movie-card{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+.edu-links a:hover{
+    background:saddlebrown;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="index.html.html" accesskey="1" title="Alt + 1">Home</a>
+    <a href="aboutme.new.html" accesskey="2" title="Alt + 2">About Me</a>
+    <a href="family.html" accesskey="3" title="Alt + 3">Family</a>
+    <a href="achievement.html" accesskey="4" title="Alt + 4">Achievement</a>
+    <a href="gallery.html" accesskey="5" title="Alt + 5">Gallery</a>
+    <a href="contact.html" accesskey="6" title="Alt + 6">Contact</a>
+</nav>
+
+<h1 class="page-title">About Me</h1>
+
+<!-- BIODATA -->
+<div class="main-container">
+
+<section class="biodata">
+<h2>Personal Information</h2>
+<table>
+<tr><td>Full Name</td><td>Dani Izzat Naqiuddin bin Mohd Amran</td></tr>
+<tr><td>Date of Birth</td><td>6 May 2005</td></tr>
+<tr><td>Age</td><td>21 years old</td></tr>
+<tr><td>Nationality</td><td>Malaysian</td></tr>
+<tr><td>Gender</td><td>Male</td></tr>
+<tr><td>Languages</td><td>Malay & English</td></tr>
+<tr><td>Favourite Colours</td><td>Black, Brown, Blue</td></tr>
+</table>
+</section>
+
+<figure>
+<img src="images/images/gambar_dani_mitec.jpeg" alt="Dani Izzat">
+</figure>
+
+</div>
+
+<!-- FAVORITE MUSIC -->
+<section>
+<h2>My Top 3 Favourite Songs</h2>
+
+<article>
+<h3>Cinta Tanpa Syarat</h3>
+<table class="media">
+<tr>
+<td><img src="images/images/afgan.jpg" class="media-img"></td>
+<td>
+<audio controls>
+            <source src="audio/cinta tanpa syarat.mpeg" type="audio/ogg">
+            <source src="audio/cinta tanpa syarat.mpeg" type="audio/mpeg">
+            Your browser does not support the audio element.
+
+        </audio>
+</td>
+</tr>
+</table>
+</article>
+
+<article>
+<h3>Mencintaimu</h3>
+<table class="media">
+<tr>
+<td><img src="images/images/sal priadi.jpg" class="media-img"></td>
+<td>
+<audio controls>
+            <source src="audio/sal priadi mencintaimu.mpeg" type="audio/ogg">
+            <source src="audio/sal priadi mencintaimu.mpeg" type="audio/mpeg">
+            Your browser does not support the audio element.
+
+        </audio>
+</td>
+</tr>
+</table>
+</article>
+
+<article>
+<h3>Ku Mohon</h3>
+<table class="media">
+<tr>
+<td><img src="images/images/ku mohon afgan.jpg" class="media-img"></td>
+<td>
+<audio controls>
+            <source src="audio/afgan ku mohon.mpeg" type="audio/ogg">
+            <source src="audio/afgan ku mohon.mpeg" type="audio/mpeg">
+            Your browser does not support the audio element.
+
+        </audio>
+</td>
+</tr>
+</table>
+</article>
+</section>
+
+<!-- FAVORITE MOVIES / SERIES -->
+<section>
+<h2>My Top 3 Favourite Movies / Series</h2>
+
+<article class="movie-card">
+    <img src="images/images/lagenda budak setan.jpg" alt="Lagenda Budak Setan">
+
+    <div class="movie-text">
+        <h3>Lagenda Budak Setan</h3>
+
+        <p>
+            <span>Synopsis:</span><br>
+            This movie tells the love story between Kasyah and Ayu, starting from their school days
+            until adulthood. Their relationship is filled with challenges, misunderstandings,
+            and emotional moments that test true love.
+        </p>
+
+        <p>
+            <span>Why I Like It:</span><br>
+            I like this movie because it shows realistic love struggles and deep emotions.
+            The story feels close to real life and teaches patience, loyalty, and sincerity in relationships.
+        </p>
+    </div>
+</article>
+
+<article class="movie-card">
+    <img src="images/images/one piece.jpg" alt="One Piece">
+
+    <div class="movie-text">
+        <h3>One Piece</h3>
+
+        <p>
+            <span>Synopsis:</span><br>
+            One Piece follows Monkey D. Luffy and his pirate crew as they travel across the seas
+            searching for the legendary treasure known as “One Piece” to become the Pirate King.
+        </p>
+
+        <p>
+            <span>Why I Like It:</span><br>
+            I like One Piece because of its strong themes of friendship, dreams, and never giving up.
+            Each character has a meaningful backstory, making the series emotional and inspiring.
+        </p>
+    </div>
+</article>
+
+<article class="movie-card">
+    <img src="images/images/money heist.jpg" alt="Money Heist">
+
+    <div class="movie-text">
+        <h3>Money Heist</h3>
+
+        <p>
+            <span>Synopsis:</span><br>
+            Money Heist is about a criminal mastermind known as “The Professor” who plans the
+            biggest heist in history by robbing the Royal Mint of Spain with a team of skilled criminals.
+        </p>
+
+        <p>
+            <span>Why I Like It:</span><br>
+            I like this series because it is intense, full of suspense, and unpredictable.
+            The characters are smart and strategic, making every episode exciting to watch.
+        </p>
+    </div>
+</article>
+
+</section>
+
+<!-- FOOTBALL -->
+<section>
+<h2>Playing Football</h2>
+
+<article>
+<p>Football keeps me active and builds teamwork.</p>
+<table class="media">
+<tr>
+<td><img src="images/images/gambar bola 1.jpeg" class="media-img" height="500"></td>
+<td><img src="images/images/gambar bola 2.jpeg" class="media-img" height="500"></td>
+<td><video controls height="300">
+                        <source src="video/video bola.mp4" type="video/mp4">
+                        <source src="video/video bola.mp4" type="video/ogg">
+                        Your browser does not support the video element
+                    </video></td>
+</tr>
+</table>
+</article>
+</section>
+
+<!-- EDUCATION -->
+<section class="education">
+<h2>My Education Journey</h2>
+
+<article>
+    <img src="images/images/logo sktt.jpg" alt="SK Tun Teja">
+    <div>
+        <p><strong>Sekolah Kebangsaan Tun Teja</strong><br>(2012–2017)</p>
+
+        <div class="edu-links">
+            <a href="https://www.facebook.com/profile.php?id=100089552256019" target="_blank">
+                <i class="fas fa-globe"></i> Visit Website
+            </a>
+            <a href="https://www.google.com/maps/search/Sekolah+Kebangsaan+Tun+Teja+Rawang" target="_blank">
+                <i class="fas fa-map-marker-alt"></i> Location
+            </a>
+        </div>
+    </div>
+</article>
+
+<article>
+    <img src="images/images/logo smktp.jpg" alt="SMK Tun Perak">
+    <div>
+        <p><strong>SMK Tun Perak</strong><br>(2018–2022)</p>
+
+        <div class="edu-links">
+            <a href="https://www.facebook.com/tun.semarak.5" target="_blank">
+                <i class="fas fa-globe"></i> Visit Website
+            </a>
+            <a href="https://www.google.com/maps/search/SMK+Tun+Perak+Rawang" target="_blank">
+                <i class="fas fa-map-marker-alt"></i> Location
+            </a>
+        </div>
+    </div>
+</article>
+
+<article>
+    <img src="images/images/logo uitm.jpg" alt="UiTM Rembau">
+    <div>
+        <p><strong>Universiti Teknologi MARA (UiTM)</strong><br>(2023–Present)</p>
+
+        <div class="edu-links">
+            <a href="https://nsembilan.uitm.edu.my/rembau/" target="_blank">
+                <i class="fas fa-globe"></i> Visit Website
+            </a>
+            <a href="https://www.google.com/maps/search/Universiti+Teknologi+MARA+Rembau" target="_blank">
+                <i class="fas fa-map-marker-alt"></i> Location
+            </a>
+        </div>
+    </div>
+</article>
+
+</section>
+
+<div class="buttons">
+    <a href="index.html.html">Back to Home</a>
+    <a href="family.html">Next Page</a>
+</div>
+
+
+</body>
+</html>
