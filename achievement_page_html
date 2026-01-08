@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Achievements | Dani Izzat Naqiuddin</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #2C2B2F;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: saddlebrown;
+        }
+
+        /* NAV BAR */
+        .nav {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .nav a {
+            margin: 0 20px;
+        }
+
+        /* PAGE TITLE */
+        .page-title {
+            text-align: center;
+            font-size: 48px;
+            margin: 40px 0;
+            color: white;
+        }
+
+        /* BUTTON */
+        .btn {
+            background-color: #A4A39C;
+            padding: 12px 28px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 30px 10px;
+        }
+
+        .btn:hover {
+            background-color: saddlebrown;
+        }
+
+        /* ACHIEVEMENT SECTION */
+        .achievement-section {
+            width: 85%;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: #3A3940;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        /* ACHIEVEMENT JOURNEY LAYOUT */
+        .achievement-journey {
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .achievement-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: #2C2B2F;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            border-left: 5px solid #A4A39C;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .achievement-image {
+            width: 200px;
+            height: 200px;
+            background-color: #3A3940;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 30px;
+            flex-shrink: 0;
+            border: 4px solid #A4A39C;
+            overflow: hidden;
+        }
+
+        .achievement-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .achievement-content {
+            flex: 1;
+        }
+
+        .achievement-header {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .achievement-title {
+            font-size: 28px;
+            color: #A4A39C;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        .achievement-year {
+            font-size: 18px;
+            color: #D3D3D3;
+            font-style: italic;
+        }
+
+        .achievement-description {
+            margin: 15px 0;
+            font-size: 18px;
+            color: #EAEAEA;
+            line-height: 1.7;
+        }
+
+        .achievement-highlights {
+            margin: 20px 0;
+        }
+
+        .highlight-tag {
+            display: inline-block;
+            background-color: #1e1e1e;
+            color: #EAEAEA;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px 8px;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .highlight-tag:hover {
+            background-color: #A4A39C;
+            color: white;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            .page-title {
+                font-size: 36px;
+            }
+            
+            .achievement-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+            
+            .achievement-image {
+                margin-right: 0;
+                margin-bottom: 20px;
+                width: 180px;
+                height: 180px;
+            }
+            
+            .achievement-header {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .achievement-title {
+                margin-right: 0;
+                margin-bottom: 5px;
+                font-size: 24px;
+            }
+            
+            .achievement-description {
+                font-size: 16px;
+            }
+            
+            .highlight-tag {
+                font-size: 12px;
+                padding: 6px 12px;
+                margin: 3px 5px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .page-title {
+                font-size: 30px;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .achievement-title {
+                font-size: 22px;
+            }
+            
+            .achievement-image {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <audio autoplay>
+        <source src="audio/cozyjazz.mp3.mpeg" type="audio/ogg">
+        <source src="audio/cozyjazz.mp3.mpeg" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+<!-- NAVIGATION -->
+<div class="nav">
+    <!-- NAVIGATION -->
+<nav>
+    <a href="index_html" accesskey="1" title="Alt + 1">Home</a>
+    <a href="aboutme_new_html" accesskey="2" title="Alt + 2">About Me</a>
+    <a href="family_page_html" accesskey="3" title="Alt + 3">Family</a>
+    <a href="achievement_page_html" accesskey="4" title="Alt + 4">Achievement</a>
+    <a href="gallery_html" accesskey="5" title="Alt + 5">Gallery</a>
+    <a href="contact_page_html" accesskey="6" title="Alt + 6">Contact</a>
+</nav>
+</div>
+
+<!-- TITLE -->
+<h1 class="page-title">My Achievements & Milestones</h1>
+
+<!-- ACHIEVEMENTS SECTION -->
+<div class="achievement-section">
+    
+    <div class="achievement-journey">
+        <!-- ACHIEVEMENT 1 - FOOTBALL TOURNAMENT -->
+        <div class="achievement-card">
+            <div class="achievement-image">
+                <img src="images/images/gambar_airport_indonesia.jpg" alt="International Football Tournament">
+            </div>
+            <div class="achievement-content">
+                <div class="achievement-header">
+                    <h3 class="achievement-title">International Football Tournament</h3>
+                    <span class="achievement-year">2019</span>
+                </div>
+                <p class="achievement-description">
+                    One of the most memorable achievements in my life was participating in an international
+                    football tournament held in Indonesia. I represented Malaysia with my club, Bintang Gombak,
+                    and competed against teams from different countries. This experience was extremely valuable
+                    as it exposed me to a higher level of competition and a more intense football environment.
+                </p>
+                <p class="achievement-description">
+                    Our team managed to reach the quarterfinals and faced the Indonesia Under-16 national team.
+                    Although we were defeated, the match taught me important lessons about discipline, teamwork,
+                    and mental strength. Competing at an international level pushed me beyond my limits and
+                    strengthened my confidence both on and off the field.
+                </p>
+                <div class="achievement-highlights">
+                    <span class="highlight-tag">International Competition</span>
+                    <span class="highlight-tag">Teamwork</span>
+                    <span class="highlight-tag">Discipline</span>
+                    <span class="highlight-tag">Mental Strength</span>
+                    <span class="highlight-tag">Quarterfinalist</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACHIEVEMENT 2 - SPM RESULTS -->
+        <div class="achievement-card">
+            <div class="achievement-image">
+                <img src="images/images/gambar_5A_dani.jpg" alt="SPM 5A Achievement">
+            </div>
+            <div class="achievement-content">
+                <div class="achievement-header">
+                    <h3 class="achievement-title">SPM Achievement – 5A Result</h3>
+                    <span class="achievement-year">2022</span>
+                </div>
+                <p class="achievement-description">
+                    Achieving 5A in my SPM examination was one of my proudest academic accomplishments.
+                    This result was not achieved easily, as it required consistent effort, discipline,
+                    and determination throughout my secondary school years.
+                </p>
+                <p class="achievement-description">
+                    The journey towards SPM taught me how to manage stress, stay focused under pressure,
+                    and believe in my own abilities. This achievement motivated me to continue improving
+                    myself academically and gave me the confidence to pursue further studies at the tertiary level.
+                </p>
+                <div class="achievement-highlights">
+                    <span class="highlight-tag">Academic Excellence</span>
+                    <span class="highlight-tag">Discipline</span>
+                    <span class="highlight-tag">Stress Management</span>
+                    <span class="highlight-tag">Consistent Effort</span>
+                    <span class="highlight-tag">5A Results</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACHIEVEMENT 3 - DEAN'S LIST -->
+        <div class="achievement-card">
+            <div class="achievement-image">
+                <img src="images/images/gambar_dean_list.jpg" alt="Dean's List Award">
+            </div>
+            <div class="achievement-content">
+                <div class="achievement-header">
+                    <h3 class="achievement-title">Dean's List Award</h3>
+                    <span class="achievement-year">2023</span>
+                </div>
+                <p class="achievement-description">
+                    Being awarded the Dean's List for the first time was a major milestone in my academic journey.
+                    It was a clear reflection of my hard work, time management, and commitment to my studies in
+                    Information Management.
+                </p>
+                <p class="achievement-description">
+                    This achievement encouraged me to stay consistent and motivated, even when facing academic
+                    challenges. It reminded me that persistence and discipline can lead to meaningful results,
+                    and it inspired me to continue aiming for academic excellence.
+                </p>
+                <div class="achievement-highlights">
+                    <span class="highlight-tag">Academic Recognition</span>
+                    <span class="highlight-tag">Time Management</span>
+                    <span class="highlight-tag">Commitment</span>
+                    <span class="highlight-tag">Consistency</span>
+                    <span class="highlight-tag">University Achievement</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- BUTTONS -->
+<div align="center">
+    <a href="family_page_html" class="btn">Previous Page</a>
+    <a href="index_html" class="btn">Back to Home</a>
+    <a href="gallery_html" class="btn">Next Page</a>
+</div>
+
+</body>
+</html>
